@@ -1,0 +1,14 @@
+{
+  "development": {
+  "dialect": "mysql"
+  },
+  "test": {
+    "use_env_variable": "db_url",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
+

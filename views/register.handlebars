@@ -1,0 +1,83 @@
+<head>
+    <style>
+        label {
+            position: absolute !important;
+            left: 0;
+            top: 10% !important;
+            color: #222;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Planning App</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="../fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<section class="signup" style="padding-top: 50px;">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Sign Up</h2>
+                <form method="POST" class="register-form" id="register-form">
+                    {{!-- Frist Name --}}
+                    <div class="form-group">
+                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="firstName" id="newUserFirstName" placeholder="First Name" required />
+                    </div>
+                    {{!-- Last Name --}}
+                    <div class="form-group">
+                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="lastName" id="newUserLastName" placeholder="Last Name" required />
+                    </div>
+                    {{!-- Company Name --}}
+                    <div class="form-group">
+                        <label for="company"><i class="zmdi zmdi-city"></i></label>
+                        <input type="text" name="companyName" id="companyName" placeholder="Company" required />
+                    </div>
+                    {{!-- Email --}}
+                    <div class="form-group">
+                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                        <input type="email" name="email" id="newUserEmail" placeholder="Your Email" required />
+                    </div>
+                    {{!-- User Name --}}
+                    <div class="form-group">
+                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="newUserUName" id="newUserUName" placeholder="User Name" required />
+                    </div>
+                    {{!-- Photo --}}
+                    <div class="form-group">
+                        <label for="photo"><i class="zmdi zmdi-camera"></i></label>
+                        <input type="text" name="photo" id="newUserPhoto" placeholder="Photo" required />
+                    </div>
+                    {{!-- Password --}}
+                    <div class="form-group">
+                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password" name="pass" id="newUserPass" placeholder="Password" required />
+                    </div>
+                    {{!-- Password Check --}}
+                    <div class="form-group">
+                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                        <input type="password" name="re_pass" id="reNewUserPass" placeholder="Repeat your password" required />
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-image">
+                <figure><img src="images/GuestListerLogo-square.png" alt="sing up image"></figure>
+                <a href="/" class="signup-image-link">I am already member</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<div class="main">
+
+  <!-- Sign up form -->
+  <section class="sign-in" style="padding-top: 50px;">
+    <div class="container">
+      <div class="signin-content">
+        <div class="signin-image">
+          <figure><img src="images/GuestListerLogo-square.png" alt="sign up image" style="width: 80%;"></figure>
+          <a href="/register" class="signup-image-link">Create an account</a>
+        </div>
+  
+        <div class="signin-form">
+          <h2 class="form-title">Sign In</h2>
+          <form action="/api/users/login" method="POST" class="register-form" id="login-form">
+            <div class="form-group">
+              <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+              <input type="text" name="username" id="userName" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+              <input type="password" name="password" id="userPass" placeholder="Password" required />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+              <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+            </div>
+            <div class="form-group form-button">
+              <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+            </div>
+          </form>
+            {{!-- <a href="/portal">Take me to portal</a>
+            <a class="mx-2" href="/guestlist">My Guestlist</a> --}}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#login-form').on('submit', function (event) {
+      event.preventDefault(); // or return false, your choice
+      $.ajax({
+        url: "/eventpage",
+        type: 'post',
+        data: { name: $("#your_name").val(), pass: $("#your_pass").val() },
+        success: function (data, textStatus, jqXHR) {
+          if (data.name == "Admin" && data.pass == "123456") {
+            $(location).attr('href', "/events");
+          } else {
+            alert("Invalid user or pass.");
+          }
+        }
+      }).fail(function (jqXHR, textStatus, errorThrown) {
+        alert("fail");
+      });
+    });
+  });
+</script>
+
