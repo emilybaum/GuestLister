@@ -1,7 +1,7 @@
 # GuestLister
 
-### Hosted on Heroku: __________
-------
+### Hosted on Heroku: https://desolate-refuge-92388.herokuapp.com/
+
 ## Why does this app exist?
 Have you ever wanted a simple way to plan an event, check people in, and automatically send notifications - even when they've arrived? Well, now you have GuestLister!
 
