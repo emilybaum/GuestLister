@@ -17,10 +17,10 @@ Upon check-in, members can know where they need to go, or to get to know each ot
 ```Handlebars```
 ```CSS```
 ```Sequelize```
-* Mailgun
-* Express
-* Node.js
-* Mocha and Chai for testing
+```Mailgun```
+```Express```
+```Node.js```
+```Mocha and Chai for testing```
 
 ## Contributors
 There are four contributors to this project
