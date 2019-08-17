@@ -13,14 +13,17 @@ Have you ever wanted a simple way to plan an event, check people in, and automat
 Upon check-in, members can know where they need to go, or to get to know each other better!
 
 ## Technology Used
-```HTML and Bootstrap```
-```Handlebars```
-```CSS```
+```Javascript```
+```jQuery```
 ```Sequelize```
 ```Mailgun```
 ```Express```
+```Express-Handlebars```
+```Express-sessions```
 ```Node.js```
 ```Mocha and Chai for testing```
+```HTML5, CSS3, and Bootstrap```
+
 
 ## Contributors
 There are four contributors to this project
